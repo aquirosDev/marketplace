@@ -5,13 +5,15 @@
 
 .AnalyticsVolumeDayData .stats-card {
   display: flex;
-  background-color: #242129;
+  background-color: #E8F5E9; /* Light green background */
   height: 96px;
   border-radius: 10px;
   padding: 24px 36px;
   align-items: center;
   position: relative;
   justify-content: space-between;
+  color: #1B5E20; /* Dark green text for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .AnalyticsVolumeDayData .stats-container {
@@ -37,7 +39,8 @@
   font-size: 19px;
   width: 48px;
   height: 48px;
-  background-color: #37333d;
+  background-color: #4CAF50; /* Medium green color */
+  color: #FFFFFF; /* White color for icon */
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -50,20 +53,21 @@
 }
 
 .AnalyticsVolumeDayData .dcl.header-menu-right {
-  border: 1px solid rgba(115, 110, 125, 0.4);
+  border: 1px solid #4CAF50; /* Medium green border */
   border-radius: 5px;
   overflow: hidden;
 }
 
 .AnalyticsVolumeDayData .dcl.header-menu-right .ui.basic.button {
   padding: 7px 16px;
-  border-right: 1px solid rgba(115, 110, 125, 0.4);
+  border-right: 1px solid #4CAF50; /* Medium green border */
   border-radius: 0;
+  color: #1B5E20; /* Dark green text */
 }
 
 .AnalyticsVolumeDayData .dcl.header-menu-right .ui.basic.button.active {
-  background-color: var(--primary) !important;
-  color: var(--white) !important;
+  background-color: #4CAF50 !important; /* Medium green accent for active state */
+  color: #FFFFFF !important; /* White text for contrast */
 }
 
 .AnalyticsVolumeDayData .ui.button + .ui.button {
@@ -74,7 +78,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  color: var(--gray);
+  color: #388E3C; /* Darker green color for secondary text */
   margin-left: 8px;
 }
 
@@ -85,6 +89,7 @@
 
 .AnalyticsVolumeDayData .dcl.stats .ui.header.sub {
   margin-bottom: 4px;
+  color: #388E3C; /* Darker green color for sub-header */
 }
 
 .AnalyticsVolumeDayData .info-logo {
@@ -95,11 +100,63 @@
   background-image: url('../../images/info.svg');
   margin-bottom: 6px;
   margin-left: 6px;
+  filter: invert(18%) sepia(90%) saturate(2085%) hue-rotate(112deg) brightness(95%) contrast(101%); /* Make the info icon green */
 }
 
 .AnalyticsVolumeDayData .stat-title-container {
   display: flex;
   align-items: flex-end;
+}
+
+/* Styles for ranking components */
+.RankingsTable,
+.Rankings,
+.RankingItem {
+  background-color: #FFFFFF; /* White background outside the table */
+  color: #1B5E20; /* Dark green text */
+}
+
+.RankingsTable .ui.table,
+.Rankings .ui.table {
+  background-color: #E8F5E9; /* Light green background for the table */
+  border-color: #4CAF50; /* Medium green border */
+}
+
+.RankingsTable .ui.table th,
+.Rankings .ui.table th {
+  background-color: #C8E6C9; /* Slightly darker green for header */
+  color: #1B5E20; /* Dark green text */
+}
+
+.RankingsTable .ui.table td,
+.Rankings .ui.table td {
+  border-color: #A5D6A7; /* Light green border for cells */
+}
+
+/* Style for the container of the rankings */
+.Rankings-container {
+  background-color: #FFFFFF; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Style for the rankings title and description */
+.Rankings-title,
+.Rankings-description {
+  color: #333333; /* Dark text color for better readability on white */
+}
+
+/* Style for the dropdown and buttons */
+.Rankings-filters select,
+.Rankings-filters button {
+  background-color: #FFFFFF;
+  border: 1px solid #4CAF50;
+  color: #1B5E20;
+}
+
+.Rankings-filters button.active {
+  background-color: #4CAF50;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
