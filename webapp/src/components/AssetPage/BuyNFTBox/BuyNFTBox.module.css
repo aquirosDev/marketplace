@@ -1,10 +1,10 @@
 .BuyNFTBox {
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--superGray);
   border-radius: 10px;
   display: flex;
   padding: 24px;
   width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--white);
 }
 
 .AlignEnd {
@@ -76,7 +76,7 @@
 }
 
 .BuyNFTBox .informationBold {
-  color: white;
+  color: var(--text);
   font-size: 30px;
   font-weight: 600;
   margin: unset;
@@ -103,7 +103,7 @@
 }
 
 .BuyNFTBox .informationText {
-  color: white;
+  color: var(--text);
   font-size: 24px;
   line-height: 1.7;
 }

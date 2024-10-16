@@ -1,0 +1,9 @@
+.ui.button.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.ui.button.secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}

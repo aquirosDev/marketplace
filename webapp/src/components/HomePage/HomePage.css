@@ -1,5 +1,6 @@
 .HomePageHero.dcl.hero {
   height: var(--page-header-height);
+  background-color: var(--superGray);
 }
 
 .HomePageHero .hero-image {
@@ -23,6 +24,7 @@
   line-height: 34px;
   font-weight: bold;
   text-transform: capitalize;
+  color: var(--text);
 }
 
 .HomePage .dcl.header-menu .ui.sub.header {
@@ -34,7 +36,7 @@
 }
 
 .HomePage .ui.sub.header {
-  color: #a09ba8;
+  color: var(--gray);
 }
 
 @media (max-width: 768px) {

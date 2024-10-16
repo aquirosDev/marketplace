@@ -12,6 +12,6 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/decentraland/marketplace.git"
+    "url": "https://github.com/decentraland/marketplace.git" // TODO: change to BioRegens
   }
 }

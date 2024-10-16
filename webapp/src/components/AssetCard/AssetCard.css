@@ -1,6 +1,8 @@
 .AssetCard {
   height: 345px;
   overflow: visible;
+  background-color: var(--white);
+  border: 1px solid var(--superGray);
 }
 
 .ui.card.AssetCard.catalog {
@@ -387,4 +389,12 @@
   position: fixed;
   top: 8px;
   left: 8px;
+}
+
+.AssetCard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.AssetCard .AssetCard-header {
+  color: var(--text);
 }
