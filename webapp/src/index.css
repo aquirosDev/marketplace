@@ -1,17 +1,25 @@
 :root {
   --page-header-height: 420px;
   /* Colors */
-  --white: rgba(255, 255, 255, 1);
+  --white: rgb(255, 255, 255);
   --background: #ffffff;
-  --text: #333333;
+  --text: #181717;
   --primary: #4CAF50; /* Green accent */
-  --secondary: #2196F3; /* Blue accent */
-  --gray: rgba(115, 110, 125, 0.4);
+  --secondary: #535353; /* Blue accent */
+  --gray: rgba(138, 143, 145, 0.863);
   --superGray: #f0f0f0;
   --superGrayHovered: #e0e0e0;
   --sidebar-width: 320px;
 }
 
+.dcl.tab
+{
+  color:#647079
+}
+.dui-navbar .dui-navbar-menu
+{
+  display:none!important;
+}
 #root {
   height: 100%;
 }
@@ -46,7 +54,7 @@ code {
 .Navigation .ui.container,
 .dcl.navbar.fullscreen .ui.container,
 .dcl.footer.ui.container,
-.dui-navbar > .ui.container {
+  .ui.container {
   width: 100vw;
   box-sizing: border-box;
   max-width: 100% !important;
